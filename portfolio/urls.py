@@ -1,10 +1,9 @@
-from django.conf.urls import include, url
+from django.conf.urls import patterns, include, url
 from django.contrib import admin
+from home import views
 
-urlpatterns = [
-    # Examples:
-    # url(r'^$', 'portfolio.views.home', name='home'),
+urlpatterns = patterns('',
+    url(r'^$', 'home.views.index'),
     # url(r'^blog/', include('blog.urls')),
-
     url(r'^admin/', include(admin.site.urls)),
-]
+)

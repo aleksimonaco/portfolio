@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aleksi Monaco</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ STATIC_URL }}styles/styles.css">
+    </head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand nav-link" href="#">Aleksi</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a class="nav-link" href="#">Lunch Menu</a></li>
+                <li class="divider"></li>
+                <li><a class="nav-link" href="#">CalculatorJS</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    <div id="intro" class="jumbotron site-section">
+      <h1><sup><i class="fa fa-quote-left"></i></sup> Chi molto pratica,<br/> molto impara <sub><i class="fa fa-quote-right"></i></sub></h1>
+      <p>Practice makes perfect</p>
+    </div>
+
+    <!-- About -->
+    <div id="aboutme" class="site-section">
+        <div class="page-header">
+          <h1>About me</h1>
+        </div>
+        <img src="https://avatars.githubusercontent.com/u/6984075?v=3" alt="Github profile image" />
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat felis, tempus at justo vel, suscipit sagittis neque. Mauris velit nulla, posuere sit amet commodo sed, mattis vitae augue. Quisque rhoncus magna sed convallis venenatis. Aenean a tellus sodales, egestas dolor vel, tincidunt arcu. Proin in vulputate ipsum, at imperdiet mi. Vestibulum venenatis egestas est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean ipsum ante, porta vitae imperdiet faucibus, aliquet ac elit. Curabitur id facilisis dolor. Duis convallis massa pharetra neque bibendum, a tristique ligula tincidunt. Sed mauris risus, malesuada et metus in, dignissim blandit quam. Duis vehicula elit felis, in congue odio mattis sed.</p>
+
+        <p>Nam interdum, tellus pretium blandit lobortis, est sapien sagittis massa, id sagittis metus risus a lorem. Curabitur metus enim, venenatis quis aliquam et, laoreet nec purus. Duis at lacinia sem. Proin ultricies diam ut fringilla euismod. Quisque mi lorem, fermentum nec augue at, venenatis rhoncus sem. Curabitur dapibus ultricies lacinia. Maecenas elementum velit quis accumsan euismod.</p>
+
+        <p>Suspendisse sit amet justo eu enim tincidunt tempus id sit amet orci. Duis eget varius velit. Nunc consequat blandit massa eu commodo. Vestibulum vulputate congue facilisis. Etiam consectetur urna eu sodales ultrices. Aliquam ultrices venenatis aliquet. Praesent ac lacus felis. Nullam tempus, enim eu eleifend porttitor, arcu nisl laoreet massa, eleifend placerat turpis massa et risus. Suspendisse commodo nisi sagittis erat aliquet, eu hendrerit enim convallis. Phasellus tincidunt sem lacus, in laoreet felis venenatis nec. Pellentesque ipsum purus, tempor at mollis ut, aliquam eget ligula. Integer consectetur pellentesque luctus. In ultrices magna sit amet eleifend hendrerit. Aliquam porttitor metus in purus commodo, non varius elit consequat. Nullam vel neque dapibus, viverra enim sed, imperdiet augue. Donec vitae neque lectus.</p>
+
+        <p>Ut vel mattis elit. Etiam ut interdum arcu. Aenean volutpat facilisis ex ut maximus. Donec ultricies egestas est, sed molestie odio faucibus vitae. Phasellus aliquet laoreet venenatis. Integer tincidunt mauris a tincidunt hendrerit. Mauris eu ultrices nisl. Aliquam lacinia dignissim libero, sed malesuada felis molestie sit amet. Duis euismod enim et enim consectetur tristique. Nulla at congue eros.</p>
+
+        <p>Mauris nec augue sed magna consequat mattis et sit amet dui. Vestibulum hendrerit, nisl vitae consequat scelerisque, ligula ex ultrices metus, eget dapibus urna tellus ac leo. Cras commodo rhoncus convallis. Sed orci ante, condimentum ac lacus at, condimentum dictum massa. Mauris mattis nunc blandit sapien consequat interdum. Nulla rhoncus aliquet eros a feugiat. Vestibulum finibus velit vitae convallis ultrices. Cras nec ligula eget dolor tincidunt accumsan</p>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects" class="site-section">
+        <div class="page-header">
+          <h1>Projects</h1>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-offset-2 col-md-4">
+            <div id="calculator-js" class="thumbnail">
+              <img src="{{ STATIC_URL }}img/project1.png" alt="Calculator JS project">
+              <div class="caption">
+                <h3>Calculator JS</h3>
+                <p>Hobby project for fun</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div id="lunch-menu" class="thumbnail">
+              <img src="{{ STATIC_URL }}img/project2.png" alt="Lunch menu project">
+              <div class="caption">
+                <h3>Lunch Menu</h3>
+                <p>Hobby project for fun</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="site-section">
+      <div class="page-header">
+        <h1>Contact</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-offset-2 col-md-2 col-sm-3">
+          <a target="_blank" href="http://fi.linkedin.com/in/aleksimonaco"><i id="linkedin" class="fa fa-linkedin fa-5x"></i></a>
+        </div>
+        <div class="col-md-2 col-sm-3">
+          <a target="_blank" href="https://github.com/aleksimonaco"><i id="github" class="fa fa-github-alt fa-5x"></i></a>
+        </div>
+        <div class="col-md-2 col-sm-3">
+          <a target="_blank" href="https://www.facebook.com/aleksi.monaco"><i id="facebook" class="fa fa-facebook-square fa-5x"></i></a>
+        </div>
+        <div class="col-md-2 col-sm-3">
+          <a target="_blank" href="http://stackoverflow.com/users/4741665/allu"><i id="stackoverflow" class="fa fa-stack-overflow fa-5x"></i></a>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <h2>Contact me</h2>
+      </div>
+
+      <form id="contact-form">
+        <div class="form-group form-inline row">
+          <div class="col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-4 col-xs-12">
+            <input type="text" class="form-control" id="form-name" placeholder="Name">
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-12">
+            <textarea class="form-control" placeholder="Message"></textarea>
+          </div>
+        </div>
+        <div id="form-button-row" class="form-group row">
+          <button id="send-button" type="submit" class="btn btn-success btn-lg">Send</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="{{ STATIC_URL }}js/portfolio.js"></script>
+</body>
+</html>
