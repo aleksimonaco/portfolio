@@ -1,0 +1,5 @@
+Hey, you got a message from {{ name }}!
+
+{{ message }}
+
+Email to reply is {{ email }}

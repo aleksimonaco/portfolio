@@ -81,7 +81,6 @@ body {
 
 	.row {
 		text-align: center;
-		margin-top: 50px;
 
 		i {
 			margin-top: 30px;
@@ -117,10 +116,14 @@ body {
 		margin-top: 50px;
 		text-align: center;
 
+		.contact-form-error {
+			text-align:left;
+		}
+
 		.form-group {
 			text-align: left;
 
-			input {
+			input, textarea {
 				width: 100%;
 				margin-top: 10px;
 			}
