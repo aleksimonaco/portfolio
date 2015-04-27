@@ -50,13 +50,13 @@ body {
   color: white; }
   #contact .row {
     text-align: center; }
-    #contact .row i {
+    #contact .row .social-media {
       margin-top: 30px;
       padding: 30px;
       border-radius: 25%;
       color: white;
       opacity: 0.5; }
-      #contact .row i:hover {
+      #contact .row .social-media:hover {
         opacity: 1; }
     #contact .row #facebook {
       background-color: #3b5998; }
@@ -79,5 +79,13 @@ body {
         margin-top: 10px; }
     #contact #contact-form #form-button-row {
       text-align: center; }
+      #contact #contact-form #form-button-row #send-button {
+        border-color: none;
+        background-image: none;
+        width: 25%; }
+
+#footer {
+  text-align: center;
+  padding: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -8,7 +8,7 @@ $(document).ready(function() {
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             if( bottom_of_window > bottom_of_object ) {
-                $(this).animate({'opacity': '1'},1500);       
+                $(this).animate({'opacity': '1'}, 2000);       
             }
             
         }); 
@@ -37,6 +37,10 @@ $(document).ready(function() {
         $(this).animate({ 'font-size': '5.5em' });
     }, function() {
             $(this).animate({ 'font-size': '5em' });
+    });
+
+    $("#contact-form").submit(function(){
+        $(this).find("#send-button").prepend("<i class='fa fa-spinner fa-spin'></i> ");
     });
 
 });

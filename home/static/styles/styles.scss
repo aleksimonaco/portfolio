@@ -82,7 +82,7 @@ body {
 	.row {
 		text-align: center;
 
-		i {
+		.social-media {
 			margin-top: 30px;
 			padding: 30px;
 			border-radius: 25%;
@@ -131,7 +131,17 @@ body {
 
 		#form-button-row {
 			text-align:center;
-		}
 
+			#send-button {
+				border-color: none;
+				background-image: none;
+				width: 25%;
+			}
+		}
 	}
+}
+
+#footer {
+	text-align: center;
+	padding: 10px;
 }
