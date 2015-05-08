@@ -9,6 +9,11 @@ body {
 
 .navbar {
 	border-radius: 0px;
+
+	.navbar-brand {
+		font-family: 'Lobster', cursive;
+		color: #8e44ad;
+	}
 }
 
 .jumbotron {

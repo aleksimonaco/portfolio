@@ -19,7 +19,7 @@ $(document).ready(function() {
         var destination = "#", nav = $(this);
     	nav.blur();
 
-    	if (nav.html() === "Aleksi") {
+    	if (nav.html() === "Aleksi Monaco") {
     		destination += "aboutme"
     	} else if (nav.html() === "Contact") {
     		destination += "contact";
