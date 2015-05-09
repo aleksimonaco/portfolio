@@ -2,4 +2,4 @@ venv
 *.pyc
 staticfiles
 .sass-cache
-settings.py
+portfolio/settings.py
