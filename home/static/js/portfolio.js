@@ -5,7 +5,7 @@ $(document).ready(function() {
         var destination = "#", 
             nav = $(this).html();
 
-    	nav.blur();
+    	$(this).blur();
 
         switch(nav) {
             case "Aleksi Monaco":
@@ -21,6 +21,8 @@ $(document).ready(function() {
                 destination += "calculator-js";
                 break;
         }
+
+        console.log(destination);
 
     	$('html, body').animate({
         	scrollTop: $(destination).offset().top - 50
