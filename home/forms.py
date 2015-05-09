@@ -11,7 +11,7 @@ class EmailForm(forms.Form):
             code='invalid_name'
             )
 		]
-		)
+	)
 	email = forms.EmailField(widget=forms.TextInput(attrs={"class" : "form-control", "placeholder" : "Email"}),
 		error_messages={'required': 'Please enter your email', 'invalid': 'Please enter a valid email'})
 	message = forms.CharField(widget=forms.Textarea(attrs={"class" : "form-control", "placeholder" : "Message"}),

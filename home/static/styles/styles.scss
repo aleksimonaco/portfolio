@@ -35,7 +35,7 @@ body {
 
 #intro {
 	text-align: center;
-	background: #837960 url("../img/andromeda.jpg");
+	background: #837960 $intro_image;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: fixed;
@@ -63,6 +63,7 @@ body {
 	}
 
 	p {
+		text-align: left;
 		width: 75%;
 	}
 }
@@ -74,7 +75,14 @@ body {
 		margin-top: 30px;
 
 		.thumbnail {
-			opacity: 0;
+			opacity: 0.5;
+   			transition: opacity .25s ease-in-out;
+   			-moz-transition: opacity .25s ease-in-out;
+   			-webkit-transition: opacity .25s ease-in-out;
+
+			&:hover {
+			 opacity: 1;
+			}
 		}
 	}
 }
@@ -93,6 +101,9 @@ body {
 			border-radius: 25%;
 			color: white;
 			opacity: 0.5;
+   			transition: opacity .25s ease-in-out;
+   			-moz-transition: opacity .25s ease-in-out;
+   			-webkit-transition: opacity .25s ease-in-out;
 
 			&:hover {
 				opacity: 1;

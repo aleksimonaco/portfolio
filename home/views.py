@@ -13,6 +13,7 @@ from django.core.mail import send_mail
 def index(request):
 	context = {}
 
+	#Contact form, email sending
 	if request.method == "POST":
 		form = forms.EmailForm(request.POST)
 

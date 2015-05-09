@@ -1,44 +1,33 @@
 $(document).ready(function() {
 
-    $(window).scroll( function() {
-    
-        $('.thumbnail').each( function(i) {
-            
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            if( bottom_of_window > bottom_of_object ) {
-                $(this).animate({'opacity': '1'}, 2000);       
-            }
-            
-        }); 
-    
-    });
-
+    // Navigation links scroll to appropiate site-section
     $(".nav-link").click(function() {
-        var destination = "#", nav = $(this);
+        var destination = "#", 
+            nav = $(this).html();
+
     	nav.blur();
 
-    	if (nav.html() === "Aleksi Monaco") {
-    		destination += "aboutme"
-    	} else if (nav.html() === "Contact") {
-    		destination += "contact";
-    	} else if (nav.html() === "Lunch Menu") {
-    		destination += "lunch-menu";
-    	} else if (nav.html() === "CalculatorJS") {
-    		destination += "calculator-js";
-    	}
+        switch(nav) {
+            case "Aleksi Monaco":
+                destination += "aboutme";
+                break;
+            case "Contact":
+                destination += "contact";
+                break;
+            case "Lunch Menu":
+                destination += "lunch-menu";
+                break;
+            case "CalculatorJS":
+                destination += "calculator-js";
+                break;
+        }
+
     	$('html, body').animate({
         	scrollTop: $(destination).offset().top - 50
     	}, 750);
     });
 
-    $("#linkedin, #github, #facebook, #stackoverflow").hover( function() {
-        $(this).animate({ 'font-size': '5.5em' });
-    }, function() {
-            $(this).animate({ 'font-size': '5em' });
-    });
-
+    //Show loading spinner when processing form
     $("#contact-form").submit(function(){
         $(this).find("#send-button").prepend("<i class='fa fa-spinner fa-spin'></i> ");
     });

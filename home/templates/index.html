@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="{{ STATIC_URL }}styles/styles.css">
     </head>
 <body>
+    <!-- Navingation Bar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -26,7 +27,7 @@
           <a class="navbar-brand nav-link" href="#">Aleksi Monaco</a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
+        
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="dropdown">
@@ -41,8 +42,9 @@
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
-    </nav>
+    </nav><!-- /.navbar -->
     
+    <!-- Intro -->
     <div id="intro" class="jumbotron site-section">
       <h1><sup><i class="fa fa-quote-left"></i></sup> Chi molto pratica,<br/> molto impara <sub><i class="fa fa-quote-right"></i></sub></h1>
       <p>Practice makes perfect</p>
@@ -51,18 +53,10 @@
     <!-- About -->
     <div id="aboutme" class="site-section">
         <div class="page-header">
-          <h1>About me</h1>
+          <h1>About</h1>
         </div>
         <img src="https://avatars.githubusercontent.com/u/6984075?v=3" alt="Github profile image" />
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat felis, tempus at justo vel, suscipit sagittis neque. Mauris velit nulla, posuere sit amet commodo sed, mattis vitae augue. Quisque rhoncus magna sed convallis venenatis. Aenean a tellus sodales, egestas dolor vel, tincidunt arcu. Proin in vulputate ipsum, at imperdiet mi. Vestibulum venenatis egestas est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean ipsum ante, porta vitae imperdiet faucibus, aliquet ac elit. Curabitur id facilisis dolor. Duis convallis massa pharetra neque bibendum, a tristique ligula tincidunt. Sed mauris risus, malesuada et metus in, dignissim blandit quam. Duis vehicula elit felis, in congue odio mattis sed.</p>
-
-        <p>Nam interdum, tellus pretium blandit lobortis, est sapien sagittis massa, id sagittis metus risus a lorem. Curabitur metus enim, venenatis quis aliquam et, laoreet nec purus. Duis at lacinia sem. Proin ultricies diam ut fringilla euismod. Quisque mi lorem, fermentum nec augue at, venenatis rhoncus sem. Curabitur dapibus ultricies lacinia. Maecenas elementum velit quis accumsan euismod.</p>
-
-        <p>Suspendisse sit amet justo eu enim tincidunt tempus id sit amet orci. Duis eget varius velit. Nunc consequat blandit massa eu commodo. Vestibulum vulputate congue facilisis. Etiam consectetur urna eu sodales ultrices. Aliquam ultrices venenatis aliquet. Praesent ac lacus felis. Nullam tempus, enim eu eleifend porttitor, arcu nisl laoreet massa, eleifend placerat turpis massa et risus. Suspendisse commodo nisi sagittis erat aliquet, eu hendrerit enim convallis. Phasellus tincidunt sem lacus, in laoreet felis venenatis nec. Pellentesque ipsum purus, tempor at mollis ut, aliquam eget ligula. Integer consectetur pellentesque luctus. In ultrices magna sit amet eleifend hendrerit. Aliquam porttitor metus in purus commodo, non varius elit consequat. Nullam vel neque dapibus, viverra enim sed, imperdiet augue. Donec vitae neque lectus.</p>
-
-        <p>Ut vel mattis elit. Etiam ut interdum arcu. Aenean volutpat facilisis ex ut maximus. Donec ultricies egestas est, sed molestie odio faucibus vitae. Phasellus aliquet laoreet venenatis. Integer tincidunt mauris a tincidunt hendrerit. Mauris eu ultrices nisl. Aliquam lacinia dignissim libero, sed malesuada felis molestie sit amet. Duis euismod enim et enim consectetur tristique. Nulla at congue eros.</p>
-
-        <p>Mauris nec augue sed magna consequat mattis et sit amet dui. Vestibulum hendrerit, nisl vitae consequat scelerisque, ligula ex ultrices metus, eget dapibus urna tellus ac leo. Cras commodo rhoncus convallis. Sed orci ante, condimentum ac lacus at, condimentum dictum massa. Mauris mattis nunc blandit sapien consequat interdum. Nulla rhoncus aliquet eros a feugiat. Vestibulum finibus velit vitae convallis ultrices. Cras nec ligula eget dolor tincidunt accumsan</p>
+        <p> I'm a 22-year old software development final year student in Haaga-Helia University of Applied Sciences. Currently I'm searching for work in the field of software development. Programming is a great passion of mine and I have already worked as a software development intern during the spring of 2015 in a company called Beddit. I like agile development (used Scrum mainly) and I'm always excited about the newest technologies.</p>
     </div>
 
     <!-- Projects -->
@@ -120,6 +114,7 @@
         <h2>Contact me</h2>
       </div>
 
+      <!-- Contact form -->
       <form id="contact-form" action="#contact-form" method="POST">
         <div class="row">
           {% if messages %}
@@ -184,6 +179,7 @@
       © 2015 Aleksi Monaco
     </div>
 
+    <!-- JAVASCRIPT -->
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="{{ STATIC_URL }}js/portfolio.js"></script>
